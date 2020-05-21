@@ -1,4 +1,4 @@
-# Trivia Re-attempt of 90's Trivia Game
+# Re-attempt of 90's Trivia Game
 # WELCOME TO THE 90'S TRIVIA GAME!!!!
 You will be quized on various topics that happened within the 90's era.
 You have 2 minutes to remember these events and answer the following questions.
