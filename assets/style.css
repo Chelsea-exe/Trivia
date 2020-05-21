@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: rosybrown;
+    background-image: url(../assets/261481365004202.jpg);
+    font-family: 'Share Tech Mono', monospace;
+    padding: 20px;
+}
+#Intro {
+    background-color: blueviolet;
+    height: 25vh;
+    width: 46vw;
+    margin-top: 250px;
+    margin-left: 420px;
+    border-radius: 4px;
+}
+#Container {
+    background-color: #be168c ;
+    height: fit-content;
+    width: fit-content;
+    margin: 80px 0 0 200px;
+    border-radius: 4px;
+}
+#submit-btn {
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 6px;
+    padding: 5px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 450px;
+    margin-top: 20px;
+    background-color: rgb(56, 206, 252);
+    border-color: rgb(130, 255, 234);
+}
+#submit-btn:hover {background-color: rgb(25, 81, 153);}
+#submit-btn:active {
+    background-color:  rgb(25, 81, 153);
+    box-shadow: 0 5px rgb(146, 145, 145);
+    transform: translateY(4px);
+}
+#Clock {
+    margin-left: 425px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+#start-btn {
+    font-family: 'Share Tech Mono', monospace;
+    border-radius: 6px;
+    padding: 5px 25px;
+    margin-left: 280px;
+    border-color:  rgb(253, 200, 170);
+    background-color: rgb(228, 0, 125);
+    font-size: 14px;
+    cursor: pointer;
+}
+#start-btn:hover {background-color: #941c62}
+#start-btn:active {
+    background-color: #941c62;
+    box-shadow: 0 5px rgb(146, 145, 145);
+    transform: translateY(4px);
+}
+#start {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 10px;
+}
+.directions {
+    padding-top: 10px;
+    text-align: center;
+}
+.Question {
+    padding: 15px 20px;
+}
+.alert {
+    font-size: 24px;
+    color: white;
+    margin-left: 320px;
+}
+input {
+    margin-left: 13px;
+    padding-bottom: 10px;
+}
+#restart {
+    height: 25vh;
+    width: 28vw;
+    margin-top: 250px;
+    margin-left: 550px;
+    background-color: rgb(65, 225, 190);
+    border-radius: 4px;
+}
+.restart-btn {
+    padding: 5px 20px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 160px;
+    background-color: rgb(140, 0, 255);
+    border-radius: 4px;
+    border-color: rgb(250, 243, 147);
+}
+.restart-btn:hover {background-color: #452057;}
+.restart-btn:active {
+    background-color: #452057;
+    box-shadow: 0 5px rgb(146, 145, 145);
+    transform: translateY(4px);
+}
+.timeUp {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+}
+#Score {
+    background-color: rgb(253, 200, 170);
+    height: fit-content;
+    width: 40vw;
+    margin-top: 150px;
+    margin-left: 450px;
+    border-radius: 4px;
+}
+#Congrats {
+    font-size: 24px;
+    font-weight: bold;
+}
+#correct {
+    font-weight: bold;
+}
+#wrong {
+    font-weight: bold;
+}
+.Finish{
+    padding-top: 5px;
+    font-size: 18px;
+}
+h3 {
+    padding-top: 10px;
+    font-size: 20px;
+}
+.Correct-Answers {
+    padding-top: 10px;
+    font-size: 17px;
+    font-style: italic;
+}
+.restart-btn2 {
+    padding: 5px 20px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 250px;
+    background-color: rgb(140, 0, 255);
+    border-radius: 4px;
+    border-color: rgb(250, 243, 147);
+}
+.restart-btn2:hover {background-color: #452057;}
+.restart-btn2:active {
+    background-color: #452057;
+    box-shadow: 0 5px rgb(146, 145, 145);
+    transform: translateY(4px);
+}

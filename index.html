@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>90's Trivia</title>
+</head>
+<body>
+    <div id="Intro">
+        <h1 id="start">WELCOME TO THE 90'S TRIVIA GAME</h1>
+        <p class="directions">You will be quized on various topics that happened within the 90's era.
+            <br>
+            You have 2 minutes to remember these events and answer the following questions.
+            <br>
+            Do you think you remember certain events that happened during the "Golden Era"?
+            <br>
+            Click the start button to begin the trivia. Good luck!!
+        </p>
+        <br>
+        <button id="start-btn">Start game</button>
+    </div>
+    <div id="Container">
+        <div id="void">
+            <p class="alert">*Please answer all the questions*</p>
+        </div>
+        <form id="quizForm" action="" onsubmit="Validate()" method="post">
+            <p class="Question">1. What is the name of the skit show started by a famous family?</p>
+                <input type="radio" name="skit" value="In Living Color"> In Living Color 
+                <input type="radio" name="skit" value="The Brady Bunch"> The Brady Bunch
+                <input type="radio" name="skit" value="MADTv"> MADTv
+                <input type="radio" name="skit" value="SNL"> Saturday Night Live
+            <p class="Question">2. Which of these iconic girl groups coin the phrase "Girl Power"?</p>
+                <input type="radio" name="GP" value="Destiny's Child"> Destiny's Child 
+                <input type="radio" name="GP" value="TLC"> TLC
+                <input type="radio" name="GP" value="Spice Girls"> Spice Girls
+                <input type="radio" name="GP" value="Dixie Chicks"> Dixie Chicks
+            <p class="Question">3. What are the name of the memebers of the boy band Backstreet Boys?</p>
+                <input type="radio" name="BS" value="Justin, JC, Lance, Joey, Chris"> Justin, JC, Lance, Joey & Chris 
+                <input type="radio" name="BS" value="AJ, Brian, Nick, Kevin & Howie"> AJ, Brian, Nick, Kevin & Howie
+                <input type="radio" name="BS" value="Nick, Jeff, Drew, Justin"> Nick, Jeff, Drew & Justin
+                <input type="radio" name="BS" value="Mark, Travis, Tom"> Mark, Travis & Tom
+            <p class="Question">4. What tv show had this recongized catach-phrase "GET TO STEPPIN"?</p>
+                <input type="radio" name="catch" value="Moesha"> Moesha
+                <input type="radio" name="catch" value="Martin"> Martin
+                <input type="radio" name="catch" value="Friends"> Friends
+                <input type="radio" name="catch" value="Sex and The City"> Sex and The City
+            <p class="Question">5. Which NBA franchise won the NBA Finals the most from 1990-1999?</p>
+                <input type="radio" name="NBA" value="Houston Rockets"> Houston Rockets 
+                <input type="radio" name="NBA" value="Los Angeles Lakers"> Los Angeles Lakers
+                <input type="radio" name="NBA" value="San Antonio Spurs"> San Antonio Spurs
+                <input type="radio" name="NBA" value="Chicago Bulls"> Chicago Bulls
+            <p class="Question">6. The NFL host a championship game called the "Superbowl", Superbowl XXIV was located in what city and stadium in 1990?</p>
+                <input type="radio" name="NFL" value="New Orleans, Superdome"> New Orleans, Superdome 
+                <input type="radio" name="NFL" value="San Diego, Qualcomm Stadium"> San Diego, Qualcomm Stadium 
+                <input type="radio" name="NFL" value="Miami, Joe Robbie Stadium"> Miami, Joe Robbie Stadium
+                <input type="radio" name="NFL" value="Pasadena, Rose Bowl"> Pasadena, Rose Bowl
+            <p class="Question">7. Which film in the 90's was the highest grossing film of decade?</p>
+                <input type="radio" name="film" value="The Lion King"> The Lion King 
+                <input type="radio" name="film" value="Jurrasic Park"> Jurrasic Park
+                <input type="radio" name="film" value="The Color Purple"> The Color Purple
+                <input type="radio" name="film" value="The Titanic"> The Titanic
+            <p class="Question">8. Who was the "bully" in the cartoon show The Rugrats?</p>
+                <input type="radio" name="rugrats" value="Angelica Pickles"> Angelica Pickles
+                <input type="radio" name="rugrats" value="Susie Carmichael"> Susie Carmichael
+                <input type="radio" name="rugrats" value="Timmy McNulty"> Timmy McNulty
+                <input type="radio" name="rugrats" value="Dill Pickles">Dill Pickles
+            <p class="Question">9. What is the name of the record label with rap acts of 2pac, Snoop Dogg, Dr. Dre and more?</p>
+                <input type="radio" name="DR" value="Bad Boy"> Bad Boy
+                <input type="radio" name="DR" value="Roc-a-fella"> Roc-A-Fella
+                <input type="radio" name="DR" value="Death Row"> Death Row
+                <input type="radio" name="DR" value="Rap-A-Lot"> Rap-A-Lot
+            <p class="Question">10. In what year was the game console Playstation released?</p>
+                <input type="radio" name="game" value="1996"> 1996
+                <input type="radio" name="game" value="1994"> 1994
+                <input type="radio" name="game" value="1998"> 1998
+                <input type="radio" name="game" value="2001"> 2001
+        </form>
+        <button id="submit-btn">Submit</button>
+        <div id="Clock"></div>
+    </div>
+    <div id="Score">
+        <h1 id="Congrats">Congrarts! You have finished the 90's Pop Quiz!</h1>
+        <p class="Finish">Let's take a look how many questions you answered correctly!</p>
+        <p class="Finish">Correct Answers: <span id="correct">0</span></p>
+        <p class="Finish">Wrong Answers: <span id="wrong">0</span></p>
+        <h3>Below are the correct answers!!!</h3>
+        <p class="Correct-Answers">1. In Living Color</p>
+        <p class="Correct-Answers">2. Spice Girls</p>
+        <p class="Correct-Answers">3. AJ, Brian Nick, Kevin & Howie</p>
+        <p class="Correct-Answers">4. Martin</p>
+        <p class="Correct-Answers">5. Chicago Bulls</p>
+        <p class="Correct-Answers">6. New Orleans, Superdome</p>
+        <p class="Correct-Answers">7. The Titanic</p>
+        <p class="Correct-Answers">8. Angelica Pickles</p>
+        <p class="Correct-Answers">9. Death Row</p>
+        <p class="Correct-Answers">10. 1994</p>
+        <button class="restart-btn2">Restart</button>
+    </div>
+    <div id="restart">
+    <p class="timeUp">Time is up, you didn't complete the quiz.</p>
+    <p class="timeUp">Press the restart button to restart the quiz.</p>
+    <button class="restart-btn">Restart</button>
+    </div> 
+</body>
+<script src="./assets/game.js"></script>
+</html>
